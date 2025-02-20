@@ -3,11 +3,275 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Job Finder - Your Path to Success</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Nextrole - AI-Powered Career Platform</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- We'll add content here based on your Figma design -->
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <a href="#" class="logo">
+                <img src="assets/logos/nextrole-icon.png" alt="Nextrole logo" class="logo__icon">
+                <span class="logo__text">Nextrole</span>
+            </a>
+            
+            <div class="nav__links">
+                <a href="#about" class="nav__link">About</a>
+                <a href="#contact" class="nav__link">Contact</a>
+                <a href="#blog" class="nav__link">Blog</a>
+                <button class="btn btn--primary">Sign Up</button>
+            </div>
+            
+            <button class="mobile-menu-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero__content container">
+            <div class="hero__badges">
+                <div class="badge badge--left">
+                    <span class="badge__text">🎉 Congrats! You're hired!</span>
+                </div>
+                <div class="badge badge--right">
+                    <span class="badge__text">★ 85% Qualified</span>
+                </div>
+            </div>
+
+            <h1 class="hero__title">
+                <span class="gradient-text">Unlock Your Career Potential</span><br>
+                with AI-Powered Tools
+            </h1>
+            
+            <p class="hero__subtitle">
+                From crafting the perfect resume to nailing interviews and landing your dream job - 
+                our platform does it all. Get started in minutes!
+            </p>
+            
+            <div class="hero__cta">
+                <button class="btn btn--cta">Get Started - Free Forever</button>
+            </div>
+
+            <div class="hero__images">
+                <img src="assets/hero/male-headshot.png" class="hero__image hero__image--left" alt="Successful user">
+                <img src="assets/hero/female-headshot.png" class="hero__image hero__image--right" alt="Happy professional">
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features section-padding">
+        <div class="container">
+            <h2 class="section__title">Our Features</h2>
+            
+            <div class="features__grid">
+                <article class="feature__card">
+                    <img src="assets/features/resume-optimizer.png" alt="Resume icon" class="feature__icon">
+                    <h3 class="feature__title">Resume Optimizer</h3>
+                    <p class="feature__description">
+                        AI-powered analysis with actionable tips to beat ATS systems and impress hiring managers.
+                    </p>
+                </article>
+
+                <!-- Repeat for other features -->
+                <article class="feature__card">
+                    <img src="assets/features/interview-prep.png" alt="Interview prep icon" class="feature__icon">
+                    <h3 class="feature__title">AI Interview Prep</h3>
+                    <p class="feature__description">
+                        Practice with realistic mock interviews and get feedback on your performance.
+                    </p>
+                </article>
+
+                <article class="feature__card">
+                    <img src="assets/features/skill-assessment.png" alt="Skills icon" class="feature__icon">
+                    <h3 class="feature__title">Skill Assessment</h3>
+                    <p class="feature__description">
+                        Identify skill gaps and get personalized learning recommendations.
+                    </p>
+                </article>
+
+                <article class="feature__card">
+                    <img src="assets/features/job-board.png" alt="Job board icon" class="feature__icon">
+                    <h3 class="feature__title">Smart Job Board</h3>
+                    <p class="feature__description">
+                        Curated job matches with one-click applications and progress tracking.
+                    </p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="process section-padding">
+        <div class="container">
+            <h2 class="section__title">How It Works</h2>
+            
+            <div class="process__steps">
+                <div class="process__step">
+                    <div class="step__illustration">
+                        <img src="assets/process/step1.png" alt="Upload resume">
+                    </div>
+                    <h3 class="step__title">1. Upload Your Resume</h3>
+                    <p class="step__description">
+                        Start with your existing resume or build a new one with our AI-powered builder.
+                    </p>
+                </div>
+
+                <div class="process__step">
+                    <div class="step__illustration">
+                        <img src="assets/process/step2.png" alt="Optimization process">
+                    </div>
+                    <h3 class="step__title">2. Optimize & Prepare</h3>
+                    <p class="step__description">
+                        Get personalized recommendations to improve your resume and interview skills.
+                    </p>
+                </div>
+
+                <div class="process__step">
+                    <div class="step__illustration">
+                        <img src="assets/process/step3.png" alt="Job application">
+                    </div>
+                    <h3 class="step__title">3. Apply & Track</h3>
+                    <p class="step__description">
+                        Discover perfect matches and track all applications in one dashboard.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials section-padding">
+        <div class="container">
+            <h2 class="section__title">Trusted by Professionals</h2>
+            
+            <div class="testimonials__grid">
+                <div class="testimonial__card">
+                    <img src="assets/testimonials/user1.png" alt="Sarah Johnson" class="testimonial__image">
+                    <blockquote class="testimonial__text">
+                        "Nextrole helped me land my dream job in 3 weeks! The resume optimizer is magic."
+                    </blockquote>
+                    <p class="testimonial__author">Sarah Johnson, Product Manager</p>
+                </div>
+
+                <!-- Add more testimonials following same structure -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose section-padding">
+        <div class="container">
+            <h2 class="section__title">Why Choose Nextrole?</h2>
+            
+            <div class="benefits__grid">
+                <div class="benefit__card">
+                    <div class="benefit__icon">
+                        <img src="assets/icons/ai-icon.png" alt="AI icon">
+                    </div>
+                    <h3 class="benefit__title">AI-Powered Insights</h3>
+                    <p class="benefit__description">
+                        Cutting-edge algorithms that learn from your career goals.
+                    </p>
+                </div>
+
+                <!-- Add other benefits following same structure -->
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq section-padding">
+        <div class="container">
+            <h2 class="section__title">Frequently Asked Questions</h2>
+            
+            <div class="faq__content">
+                <div class="faq__illustration">
+                    <img src="assets/faq/illustration.png" alt="FAQ illustration">
+                </div>
+                
+                <div class="faq__items">
+                    <div class="faq__item">
+                        <button class="faq__question">
+                            How does the resume optimizer work?
+                            <span class="toggle-icon">+</span>
+                        </button>
+                        <div class="faq__answer">
+                            <p>Our AI analyzes your resume against thousands of successful examples...</p>
+                        </div>
+                    </div>
+
+                    <!-- Add more FAQ items -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="cta-final section-padding">
+        <div class="container">
+            <div class="cta__content">
+                <h2 class="cta__title">Ready to Transform Your Career?</h2>
+                <p class="cta__subtitle">Join thousands who've already landed their dream jobs</p>
+                <button class="btn btn--cta">Start Free Trial</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <a href="#" class="logo">
+                        <img src="assets/logos/nextrole-icon.png" alt="Nextrole logo" class="logo__icon">
+                        <span class="logo__text">Nextrole</span>
+                    </a>
+                    <p class="footer__tagline">Your AI Career Companion</p>
+                </div>
+
+                <div class="footer__links">
+                    <div class="footer__col">
+                        <h4 class="footer__heading">Product</h4>
+                        <a href="#" class="footer__link">Features</a>
+                        <a href="#" class="footer__link">Pricing</a>
+                        <a href="#" class="footer__link">FAQ</a>
+                    </div>
+
+                    <div class="footer__col">
+                        <h4 class="footer__heading">Company</h4>
+                        <a href="#" class="footer__link">About</a>
+                        <a href="#" class="footer__link">Blog</a>
+                        <a href="#" class="footer__link">Careers</a>
+                    </div>
+
+                    <div class="footer__col">
+                        <h4 class="footer__heading">Legal</h4>
+                        <a href="#" class="footer__link">Privacy</a>
+                        <a href="#" class="footer__link">Terms</a>
+                        <a href="#" class="footer__link">Security</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p class="copyright">&copy; 2024 Nextrole. All rights reserved.</p>
+                <div class="social__links">
+                    <a href="#" class="social__link">Twitter</a>
+                    <a href="#" class="social__link">LinkedIn</a>
+                    <a href="#" class="social__link">Facebook</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
     <script src="main.js"></script>
 </body>
 </html>
