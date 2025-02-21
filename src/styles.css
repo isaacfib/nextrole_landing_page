@@ -301,16 +301,41 @@ body {
     transform: scale(1.05);
 }
 
+.testimonial-card.top-left {
+    top: 20%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+}
+
 .testimonial-card.top-right {
-    top: 30%;
+    top: 20%;
     right: 20%;
     transform: translate(50%, -50%);
 }
 
+.testimonial-card.center-top {
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.testimonial-card.center-bottom {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10; /* Ensure center-bottom headshot is on top */
+}
+
 .testimonial-card.bottom-left {
-    bottom: 30%;
+    bottom: 20%;
     left: 20%;
     transform: translate(-50%, 50%);
+}
+
+.testimonial-card.bottom-right {
+    bottom: 20%;
+    right: 20%;
+    transform: translate(50%, 50%);
 }
 
 .testimonial-headshot {
@@ -321,11 +346,16 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.testimonial-card.center-bottom .testimonial-headshot {
+    width: 200px;
+    height: 200px;
+}
+
 .badge {
     position: absolute;
     bottom: -20px;
     left: 50%;
-    transform: translateX(-50%) rotate(-5deg);
+    transform: translateX(-50%) rotate(-5deg); /* Slight angle for visual interest */
     background: var(--primary-color);
     color: var(--light-text);
     padding: 5px 10px;
@@ -333,11 +363,7 @@ body {
     font-size: 12px;
     white-space: nowrap;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    z-index: 20;
-}
-
-.testimonial-card.bottom-left .badge {
-    background: #FF4500; /* OrangeRed for alert */
+    z-index: 20; /* Ensure badges are above other elements */
 }
 
 .dot {
@@ -837,6 +863,11 @@ body {
         height: 120px;
     }
 
+    .testimonial-card.center-bottom .testimonial-headshot {
+        width: 150px;
+        height: 150px;
+    }
+
     .badge {
         position: static;
         transform: none;
@@ -876,6 +907,12 @@ body {
         margin: 0 auto 20px;
     }
 
+    .cta {
+        padding: 40px 15px;
+        margin: 10px;
+        border-radius: 12px;
+    }
+
     .cta-button {
         width: 90%;
         max-width: 300px;
@@ -896,4 +933,4 @@ body {
     .copyright p {
         font-size: 12px;
     }
-  }
+                                }
