@@ -19,5 +19,12 @@
   "homepage": "https://github.com/isaacfib/nextrole_landing_page#readme",
   "devDependencies": {
     "parcel": "^2.13.3"
+  },  
+  "devDependencies": {
+    "eslint": "^8.0.0",
+    "stylelint": "^15.0.0",
+    "htmlhint": "^1.0.0"
   }
+
 }
+
