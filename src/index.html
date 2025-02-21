@@ -3,271 +3,254 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nextrole - AI-Powered Career Platform</title>
+    <meta name="description" content="Nextrole helps you unlock your career potential with AI-powered tools for resumes, interviews, and job applications.">
+    <meta property="og:title" content="Nextrole - Unlock Your Career Potential">
+    <meta property="og:description" content="From crafting the perfect resume to nailing the interview and finding your dream job—our platform does it all.">
+    <meta property="og:image" content="https://yourdomain.com/src/assets/logo.png">
+    <meta property="og:url" content="https://yourdomain.com">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>Nextrole - Unlock Your Career Potential</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Header -->
     <header class="header">
-        <nav class="nav container">
-            <a href="#" class="logo">
-                <img src="assets/logos/nextrole-icon.png" alt="Nextrole logo" class="logo__icon">
-                <span class="logo__text">Nextrole</span>
-            </a>
-            
-            <div class="nav__links">
-                <a href="#about" class="nav__link">About</a>
-                <a href="#contact" class="nav__link">Contact</a>
-                <a href="#blog" class="nav__link">Blog</a>
-                <button class="btn btn--primary">Sign Up</button>
+        <div class="header-container">
+            <div class="logo-container">
+                <picture>
+                    <source srcset="src/assets/logo.svg" type="image/svg+xml">
+                    <img src="src/assets/logo.png" srcset="src/assets/logo.png 1x, src/assets/logo-2x.png 2x" alt="Nextrole Logo" class="logo" loading="lazy">
+                </picture>
+                <span class="logo-text">Nextrole</span>
             </div>
-            
-            <button class="mobile-menu-toggle">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </button>
-        </nav>
+            <nav class="navigation" aria-label="Main navigation">
+                <a href="#" class="nav-link" aria-label="Learn more about Nextrole">About</a>
+                <a href="#" class="nav-link" aria-label="Contact Nextrole support">Contact Us</a>
+                <a href="#" class="nav-link" aria-label="Read the Nextrole blog">Blog</a>
+                <a href="#" class="nav-link sign-up" aria-label="Sign up for Nextrole">Sign up</a>
+            </nav>
+            <button class="hamburger" aria-label="Toggle navigation" role="button">☰</button>
+        </div>
     </header>
 
     <!-- Hero Section -->
     <section class="hero">
-        <div class="hero__content container">
-            <div class="hero__badges">
-                <div class="badge badge--left">
-                    <span class="badge__text">🎉 Congrats! You're hired!</span>
-                </div>
-                <div class="badge badge--right">
-                    <span class="badge__text">★ 85% Qualified</span>
-                </div>
-            </div>
-
-            <h1 class="hero__title">
-                <span class="gradient-text">Unlock Your Career Potential</span><br>
-                with AI-Powered Tools
-            </h1>
-            
-            <p class="hero__subtitle">
-                From crafting the perfect resume to nailing interviews and landing your dream job - 
-                our platform does it all. Get started in minutes!
+        <div class="hero-content">
+            <h1 class="hero-headline">Unlock Your Career Potential with AI-Powered Tools</h1>
+            <p class="hero-subheadline">
+                From crafting the perfect resume to nailing the interview and finding your dream job—our platform does it all. Get started in minutes and take control of your job search!
             </p>
-            
-            <div class="hero__cta">
-                <button class="btn btn--cta">Get Started - Free Forever</button>
-            </div>
-
-            <div class="hero__images">
-                <img src="assets/hero/male-headshot.png" class="hero__image hero__image--left" alt="Successful user">
-                <img src="assets/hero/female-headshot.png" class="hero__image hero__image--right" alt="Happy professional">
+            <button class="cta-button" aria-label="Get started with Nextrole">Get Started</button>
+            <div class="headshots">
+                <div class="headshot-container">
+                    <img src="src/assets/headshots/male.jpg" alt="Headshot of smiling man in black shirt" class="headshot" loading="lazy">
+                    <div class="badge">★ You are 85% qualified for this role</div>
+                </div>
+                <div class="headshot-container">
+                    <img src="src/assets/headshots/female.jpg" alt="Headshot of smiling woman with red hair in striped shirt" class="headshot" loading="lazy">
+                    <div class="badge">Congrats! You have been accepted to join us at AmaFlex</div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Features Section -->
-    <section class="features section-padding">
-        <div class="container">
-            <h2 class="section__title">Our Features</h2>
-            
-            <div class="features__grid">
-                <article class="feature__card">
-                    <img src="assets/features/resume-optimizer.png" alt="Resume icon" class="feature__icon">
-                    <h3 class="feature__title">Resume Optimizer</h3>
-                    <p class="feature__description">
-                        AI-powered analysis with actionable tips to beat ATS systems and impress hiring managers.
-                    </p>
-                </article>
-
-                <!-- Repeat for other features -->
-                <article class="feature__card">
-                    <img src="assets/features/interview-prep.png" alt="Interview prep icon" class="feature__icon">
-                    <h3 class="feature__title">AI Interview Prep</h3>
-                    <p class="feature__description">
-                        Practice with realistic mock interviews and get feedback on your performance.
-                    </p>
-                </article>
-
-                <article class="feature__card">
-                    <img src="assets/features/skill-assessment.png" alt="Skills icon" class="feature__icon">
-                    <h3 class="feature__title">Skill Assessment</h3>
-                    <p class="feature__description">
-                        Identify skill gaps and get personalized learning recommendations.
-                    </p>
-                </article>
-
-                <article class="feature__card">
-                    <img src="assets/features/job-board.png" alt="Job board icon" class="feature__icon">
-                    <h3 class="feature__title">Smart Job Board</h3>
-                    <p class="feature__description">
-                        Curated job matches with one-click applications and progress tracking.
-                    </p>
-                </article>
-            </div>
+    <section class="features" id="features">
+        <h2 class="features-title">Our Features</h2>
+        <div class="feature-grid">
+            <article class="feature-card">
+                <picture>
+                    <source srcset="src/assets/icons/resume-optimizer.svg" type="image/svg+xml">
+                    <img src="src/assets/icons/resume-optimizer.png" alt="Resume Optimizer icon" class="feature-icon" loading="lazy">
+                </picture>
+                <h3>Resume Optimizer</h3>
+                <p>Our AI analyzes your resume and provides actionable tips to make it stand out. Get past the ATS and impress hiring managers.</p>
+            </article>
+            <article class="feature-card">
+                <picture>
+                    <source srcset="src/assets/icons/interview-prep.svg" type="image/svg+xml">
+                    <img src="src/assets/icons/interview-prep.png" alt="Interview Prep icon" class="feature-icon" loading="lazy">
+                </picture>
+                <h3>Interview Prep</h3>
+                <p>Practice with AI-driven mock interviews tailored to your industry and role, boosting your confidence.</p>
+            </article>
+            <article class="feature-card">
+                <picture>
+                    <source srcset="src/assets/icons/skill-assessment.svg" type="image/svg+xml">
+                    <img src="src/assets/icons/skill-assessment.png" alt="Skill Assessment icon" class="feature-icon" loading="lazy">
+                </picture>
+                <h3>Skill Assessment</h3>
+                <p>Evaluate your strengths and identify areas for growth with personalized insights.</p>
+            </article>
+            <article class="feature-card">
+                <picture>
+                    <source srcset="src/assets/icons/matching-job-board.svg" type="image/svg+xml">
+                    <img src="src/assets/icons/matching-job-board.png" alt="Matching Job Board icon" class="feature-icon" loading="lazy">
+                </picture>
+                <h3>Matching Job Board</h3>
+                <p>Discover opportunities that align with your skills and career goals, updated daily.</p>
+            </article>
+            <article class="feature-card">
+                <picture>
+                    <source srcset="src/assets/icons/easy-application.svg" type="image/svg+xml">
+                    <img src="src/assets/icons/easy-application.png" alt="Easy Application Process icon" class="feature-icon" loading="lazy">
+                </picture>
+                <h3>Easy Application Process</h3>
+                <p>Apply to jobs seamlessly with one-click applications and track your progress.</p>
+            </article>
+            <article class="feature-card">
+                <picture>
+                    <source srcset="src/assets/icons/skill-assessment.svg" type="image/svg+xml">
+                    <img src="src/assets/icons/skill-assessment.png" alt="Skill Assessment icon" class="feature-icon" loading="lazy">
+                </picture>
+                <h3>Skill Assessment</h3>
+                <p>Evaluate your strengths and identify areas for growth with personalized insights.</p>
+            </article>
         </div>
     </section>
 
     <!-- How It Works Section -->
-    <section class="process section-padding">
-        <div class="container">
-            <h2 class="section__title">How It Works</h2>
-            
-            <div class="process__steps">
-                <div class="process__step">
-                    <div class="step__illustration">
-                        <img src="assets/process/step1.png" alt="Upload resume">
-                    </div>
-                    <h3 class="step__title">1. Upload Your Resume</h3>
-                    <p class="step__description">
-                        Start with your existing resume or build a new one with our AI-powered builder.
-                    </p>
-                </div>
-
-                <div class="process__step">
-                    <div class="step__illustration">
-                        <img src="assets/process/step2.png" alt="Optimization process">
-                    </div>
-                    <h3 class="step__title">2. Optimize & Prepare</h3>
-                    <p class="step__description">
-                        Get personalized recommendations to improve your resume and interview skills.
-                    </p>
-                </div>
-
-                <div class="process__step">
-                    <div class="step__illustration">
-                        <img src="assets/process/step3.png" alt="Job application">
-                    </div>
-                    <h3 class="step__title">3. Apply & Track</h3>
-                    <p class="step__description">
-                        Discover perfect matches and track all applications in one dashboard.
-                    </p>
-                </div>
-            </div>
+    <section class="how-it-works" id="how-it-works">
+        <h2 class="how-it-works-title">How it works</h2>
+        <div class="steps-grid">
+            <article class="step-card">
+                <img src="src/assets/illustrations/upload-resume.png" alt="Illustration of uploading a resume to the Nextrole platform" class="step-illustration" loading="lazy">
+                <h3>Upload your resume</h3>
+                <p>Get started by uploading your current resume to our secure platform.</p>
+            </article>
+            <article class="step-card">
+                <img src="src/assets/illustrations/optimise-prep.png" alt="Illustration of optimizing resume and preparing for interviews with Nextrole" class="step-illustration" loading="lazy">
+                <h3>Optimise and prep</h3>
+                <p>Our AI enhances your resume and prepares you for interviews with tailored tools.</p>
+            </article>
+            <article class="step-card">
+                <img src="src/assets/illustrations/find-apply.png" alt="Illustration of finding and applying to jobs with Nextrole" class="step-illustration" loading="lazy">
+                <h3>Find and apply</h3>
+                <p>Explore matching jobs and apply effortlessly with our streamlined process.</p>
+            </article>
         </div>
     </section>
 
-    <!-- Testimonials Section -->
-    <section class="testimonials section-padding">
-        <div class="container">
-            <h2 class="section__title">Trusted by Professionals</h2>
-            
-            <div class="testimonials__grid">
-                <div class="testimonial__card">
-                    <img src="assets/testimonials/user1.png" alt="Sarah Johnson" class="testimonial__image">
-                    <blockquote class="testimonial__text">
-                        "Nextrole helped me land my dream job in 3 weeks! The resume optimizer is magic."
-                    </blockquote>
-                    <p class="testimonial__author">Sarah Johnson, Product Manager</p>
-                </div>
-
-                <!-- Add more testimonials following same structure -->
+    <!-- Social Proof Section -->
+    <section class="social-proof" id="social-proof">
+        <h2 class="social-proof-title">Trusted by over 1,000 professionals</h2>
+        <div class="testimonials-container">
+            <div class="testimonial-card top-right">
+                <img src="src/assets/headshots/professional2.jpg" alt="Headshot of female professional with long hair in striped shirt" class="testimonial-headshot" loading="lazy">
+                <div class="badge">Congrats! You have been accepted to join us at AmaFlex</div>
             </div>
+            <div class="testimonial-card bottom-left">
+                <img src="src/assets/headshots/professional4.jpg" alt="Headshot of female professional with long brown hair in patterned shirt" class="testimonial-headshot" loading="lazy">
+                <div class="badge">⚠️ Your resume update is complete with a 93% ATS match</div>
+            </div>
+            <!-- Decorative Dots -->
+            <div class="dot dot-yellow" aria-hidden="true"></div>
+            <div class="dot dot-green" aria-hidden="true"></div>
+            <div class="dot dot-blue" aria-hidden="true"></div>
+            <div class="dot dot-purple" aria-hidden="true"></div>
         </div>
     </section>
 
     <!-- Why Choose Us Section -->
-    <section class="why-choose section-padding">
-        <div class="container">
-            <h2 class="section__title">Why Choose Nextrole?</h2>
-            
-            <div class="benefits__grid">
-                <div class="benefit__card">
-                    <div class="benefit__icon">
-                        <img src="assets/icons/ai-icon.png" alt="AI icon">
-                    </div>
-                    <h3 class="benefit__title">AI-Powered Insights</h3>
-                    <p class="benefit__description">
-                        Cutting-edge algorithms that learn from your career goals.
-                    </p>
-                </div>
-
-                <!-- Add other benefits following same structure -->
-            </div>
+    <section class="why-choose-us" id="why-choose-us">
+        <h2 class="why-choose-us-title">Why choose us?</h2>
+        <div class="benefits-grid">
+            <article class="benefit-card">
+                <picture>
+                    <source srcset="src/assets/icons/ai-personalization.svg" type="image/svg+xml">
+                    <img src="src/assets/icons/ai-personalization.png" alt="AI-Powered Personalization icon" class="benefit-icon" loading="lazy">
+                </picture>
+                <h3>AI-Powered Personalization</h3>
+                <p>Every feature is tailored to your unique career goals.</p>
+            </article>
+            <article class="benefit-card">
+                <picture>
+                    <source srcset="src/assets/icons/one-platform.svg" type="image/svg+xml">
+                    <img src="src/assets/icons/one-platform.png" alt="One Platform, Many Solutions icon" class="benefit-icon" loading="lazy">
+                </picture>
+                <h3>One Platform, Many Solutions</h3>
+                <p>From resumes to interviews and beyond.</p>
+            </article>
+            <article class="benefit-card">
+                <picture>
+                    <source srcset="src/assets/icons/results-matter.svg" type="image/svg+xml">
+                    <img src="src/assets/icons/results-matter.png" alt="Results That Matter icon" class="benefit-icon" loading="lazy">
+                </picture>
+                <h3>Results That Matter</h3>
+                <p>85% of our users land interviews in ~30 days.</p>
+            </article>
+            <article class="benefit-card">
+                <picture>
+                    <source srcset="src/assets/icons/trusted.svg" type="image/svg+xml">
+                    <img src="src/assets/icons/trusted.png" alt="Trusted by Thousands icon" class="benefit-icon" loading="lazy">
+                </picture>
+                <h3>Trusted by Thousands</h3>
+                <p>Over 10,000 users and counting.</p>
+            </article>
         </div>
+        <img src="src/assets/illustrations/why-choose-us.png" alt="Abstract 3D holographic illustration for why choose us" class="why-illustration" loading="lazy">
+        <button class="cta-button" aria-label="Join thousands of satisfied job seekers with Nextrole">Join thousands of satisfied job seekers</button>
     </section>
 
     <!-- FAQ Section -->
-    <section class="faq section-padding">
-        <div class="container">
-            <h2 class="section__title">Frequently Asked Questions</h2>
-            
-            <div class="faq__content">
-                <div class="faq__illustration">
-                    <img src="assets/faq/illustration.png" alt="FAQ illustration">
-                </div>
-                
-                <div class="faq__items">
-                    <div class="faq__item">
-                        <button class="faq__question">
-                            How does the resume optimizer work?
-                            <span class="toggle-icon">+</span>
-                        </button>
-                        <div class="faq__answer">
-                            <p>Our AI analyzes your resume against thousands of successful examples...</p>
-                        </div>
+    <section class="faq" id="faq">
+        <h2 class="faq-title">Frequently asked questions</h2>
+        <div class="faq-content">
+            <img src="src/assets/illustrations/faq-star.png" alt="Abstract 3D holographic star illustration for FAQ" class="faq-illustration" loading="lazy">
+            <div class="faq-container">
+                <article class="faq-item">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq1" tabindex="0">
+                        How does the resume optimizer work? <span class="toggle">+</span>
+                    </button>
+                    <div id="faq1" class="faq-answer">
+                        <p>Our AI scans your resume and provides tailored suggestions to improve ATS compatibility and appeal to recruiters.</p>
                     </div>
-
-                    <!-- Add more FAQ items -->
-                </div>
+                </article>
+                <article class="faq-item">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq2" tabindex="0">
+                        What industries does this platform support? <span class="toggle">+</span>
+                    </button>
+                    <div id="faq2" class="faq-answer">
+                        <p>We support a wide range of industries, including tech, finance, healthcare, and more.</p>
+                    </div>
+                </article>
+                <article class="faq-item">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq3" tabindex="0">
+                        Is there a free version? <span class="toggle">+</span>
+                    </button>
+                    <div id="faq3" class="faq-answer">
+                        <p>Yes, we offer a free tier with core features, plus premium options for advanced tools.</p>
+                    </div>
+                </article>
             </div>
         </div>
     </section>
 
-    <!-- Final CTA Section -->
-    <section class="cta-final section-padding">
-        <div class="container">
-            <div class="cta__content">
-                <h2 class="cta__title">Ready to Transform Your Career?</h2>
-                <p class="cta__subtitle">Join thousands who've already landed their dream jobs</p>
-                <button class="btn btn--cta">Start Free Trial</button>
-            </div>
-        </div>
+    <!-- Call to Action Section -->
+    <section class="cta" id="cta">
+        <h2 class="cta-title">Get ready to supercharge your career with Nextrole!</h2>
+        <button class="cta-button" aria-label="Join thousands of satisfied job seekers with Nextrole">Join thousands of satisfied job seekers</button>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer__content">
-                <div class="footer__brand">
-                    <a href="#" class="logo">
-                        <img src="assets/logos/nextrole-icon.png" alt="Nextrole logo" class="logo__icon">
-                        <span class="logo__text">Nextrole</span>
-                    </a>
-                    <p class="footer__tagline">Your AI Career Companion</p>
-                </div>
-
-                <div class="footer__links">
-                    <div class="footer__col">
-                        <h4 class="footer__heading">Product</h4>
-                        <a href="#" class="footer__link">Features</a>
-                        <a href="#" class="footer__link">Pricing</a>
-                        <a href="#" class="footer__link">FAQ</a>
-                    </div>
-
-                    <div class="footer__col">
-                        <h4 class="footer__heading">Company</h4>
-                        <a href="#" class="footer__link">About</a>
-                        <a href="#" class="footer__link">Blog</a>
-                        <a href="#" class="footer__link">Careers</a>
-                    </div>
-
-                    <div class="footer__col">
-                        <h4 class="footer__heading">Legal</h4>
-                        <a href="#" class="footer__link">Privacy</a>
-                        <a href="#" class="footer__link">Terms</a>
-                        <a href="#" class="footer__link">Security</a>
-                    </div>
-                </div>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <picture>
+                    <source srcset="src/assets/logo.svg" type="image/svg+xml">
+                    <img src="src/assets/logo.png" srcset="src/assets/logo.png 1x, src/assets/logo-2x.png 2x" alt="Nextrole Logo" class="logo" loading="lazy">
+                </picture>
+                <span class="logo-text">Nextrole</span>
             </div>
-
-            <div class="footer__bottom">
-                <p class="copyright">&copy; 2024 Nextrole. All rights reserved.</p>
-                <div class="social__links">
-                    <a href="#" class="social__link">Twitter</a>
-                    <a href="#" class="social__link">LinkedIn</a>
-                    <a href="#" class="social__link">Facebook</a>
-                </div>
+            <nav class="footer-navigation" aria-label="Footer navigation">
+                <a href="#" class="footer-link" aria-label="Learn more about Nextrole">About</a>
+                <a href="#" class="footer-link" aria-label="Contact Nextrole support">Contact Us</a>
+                <a href="#" class="footer-link" aria-label="Read Nextrole's privacy policy">Privacy Policy</a>
+                <a href="#" class="footer-link" aria-label="Read Nextrole's terms of service">Terms of Service</a>
+                <a href="#" class="footer-link" aria-label="Read the Nextrole blog">Blog</a>
+            </nav>
+            <div class="copyright">
+                <p>Copyright: © 2025 Nextrole Inc. All rights reserved.</p>
             </div>
         </div>
     </footer>
