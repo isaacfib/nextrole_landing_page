@@ -1,6 +1,6 @@
 # Nextrole Landing Page
 
-Landing page for Nextrole, an AI-powered career platform. This project showcases features, user testimonials, and a call to action, built with modern web standards and best practices.
+Landing page for Nextrole, an AI-powered career platform. This project showcases features, user testimonials, and a call to action.
 
 ## Getting Started
 
