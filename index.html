@@ -1,3 +1,4 @@
+<!-- HTML -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,101 +14,156 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header -->
-    <header class="header">
-        <div class="header-container">
-            <div class="logo-container">
-                <picture>
-                    <source srcset="assets/logo.svg" type="image/svg+xml">
-                    <img src="assets/logo.png" srcset="assets/logo.png 1x, assets/logo-2x.png 2x" alt="Nextrole Logo" class="logo" loading="lazy">
-                </picture>
-                <span class="logo-text">Nextrole</span>
-            </div>
-            <nav class="navigation" aria-label="Main navigation">
-                <a href="#" class="nav-link" aria-label="Learn more about Nextrole">About</a>
-                <a href="#" class="nav-link" aria-label="Contact Nextrole support">Contact Us</a>
-                <a href="#" class="nav-link" aria-label="Read the Nextrole blog">Blog</a>
-                <a href="#" class="nav-link sign-up" aria-label="Sign up for Nextrole">Sign up</a>
-            </nav>
-            <button class="hamburger" aria-label="Toggle navigation" role="button">☰</button>
-        </div>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1 class="hero-headline">Unlock Your Career Potential with AI-Powered Tools</h1>
-            <p class="hero-subheadline">
-                From crafting the perfect resume to nailing the interview and finding your dream job—our platform does it all. Get started in minutes and take control of your job search!
-            </p>
-            <button class="cta-button" aria-label="Get started with Nextrole">Get Started</button>
-            <div class="headshots">
-                <div class="headshot-container">
-                    <img src="assets/headshots/male.jpg" alt="Headshot of smiling man in black shirt" class="headshot" loading="lazy">
-                    <div class="badge">★ Congrats! You're hired!</div>
+    <div class="landing-page">
+        <!-- Background Elements -->
+        <div class="background-gradient"></div>
+        <div class="background-vector"></div>
+        <div class="accent-dot"></div>
+        
+        <!-- Header -->
+        <header class="header">
+            <div class="header-container">
+                <div class="logo-container">
+                    <picture>
+                        <source srcset="assets/logo.svg" type="image/svg+xml">
+                        <img src="assets/logo.png" srcset="assets/logo.png 1x, assets/logo-2x.png 2x" alt="Nextrole Logo" class="logo" loading="lazy">
+                    </picture>
+                    <span class="logo-text">Nextrole</span>
                 </div>
-                <div class="headshot-container">
-                    <img src="assets/headshots/female.jpg" alt="Headshot of smiling woman with red hair in striped shirt" class="headshot" loading="lazy">
-                    <div class="badge">You are 86% qualified for this role</div>
-                </div>
+                <nav class="navigation" aria-label="Main navigation">
+                    <a href="#" class="nav-link" aria-label="Learn more about Nextrole">About</a>
+                    <a href="#" class="nav-link" aria-label="Contact Nextrole support">Contact Us</a>
+                    <a href="#" class="nav-link" aria-label="Read the Nextrole blog">Blog</a>
+                    <a href="#" class="nav-link sign-up" aria-label="Sign up for Nextrole">Sign up</a>
+                </nav>
+                <button class="hamburger" aria-label="Toggle navigation" role="button">☰</button>
+            </div>
+        </header>
+    
+    <!-- HTML -->
+<section class="hero">
+    <div class="hero-content">
+        <h1 class="hero-headline">Unlock Your Career Potential with AI-Powered Tools</h1>
+        <p class="hero-subheadline">
+            From crafting the perfect resume to nailing the interview and finding your dream job—our platform does it all. Get started in minutes and take control of your job search!
+        </p>
+        <button class="cta-button" aria-label="Get started with Nextrole">Get Started</button>
+        
+        <!-- Decorative Elements -->
+        <div class="decorative-dots">
+            <div class="dot dot-green-1"></div>
+            <div class="dot dot-green-2"></div>
+            <div class="dot dot-green-3"></div>
+            <div class="dot dot-yellow-1"></div>
+            <div class="dot dot-yellow-2"></div>
+            <div class="dot dot-blue-1"></div>
+            <div class="dot dot-blue-2"></div>
+        </div>
+        
+        <!-- Headshot Sections -->
+        <div class="headshots">
+            <div class="headshot-container left">
+                <img src="assets/headshots/male.jpg" alt="Headshot of smiling man in black shirt" class="headshot" loading="lazy">
+                <div class="badge badge-purple">★ Congrats! You're hired!</div>
+            </div>
+            <div class="headshot-container right">
+                <img src="assets/headshots/female.jpg" alt="Headshot of smiling woman with red hair in striped shirt" class="headshot" loading="lazy">
+                <div class="badge badge-blue">You are 86% qualified for this role</div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Features Section -->
-    <section class="features" id="features">
-        <h2 class="features-title">Our Features</h2>
-        <div class="feature-grid">
-            <article class="feature-card">
+        <!-- Features Section -->
+<section class="features" id="features">
+    <div class="features-background"></div>
+    <h2 class="features-title">Our Features</h2>
+    <div class="feature-grid">
+        <!-- Feature Card 1: Resume Optimizer -->
+        <article class="feature-card">
+            <div class="icon-container">
                 <picture>
                     <source srcset="assets/icons/resume-optimizer.svg" type="image/svg+xml">
                     <img src="assets/icons/resume-optimizer.png" alt="Resume Optimizer icon" class="feature-icon" loading="lazy">
                 </picture>
+            </div>
+            <div class="feature-content">
                 <h3>Resume Optimizer</h3>
                 <p>Our AI analyzes your resume and provides actionable tips to make it stand out. Get past the ATS and impress hiring managers.</p>
-            </article>
-            <article class="feature-card">
+            </div>
+        </article>
+
+        <!-- Feature Card 2:  -->
+        <article class="feature-card">
+            <div class="icon-container">
                 <picture>
-                    <source srcset="assets/icons/interview-prep.svg" type="image/svg+xml">
-                    <img src="assets/icons/interview-prep.png" alt="Interview Prep icon" class="feature-icon" loading="lazy">
+                    <source srcset="assets/icons/resume-optimizer.svg" type="image/svg+xml">
+                    <img src="assets/icons/resume-optimizer.png" alt="Resume Optimizer icon" class="feature-icon" loading="lazy">
                 </picture>
-                <h3>Interview Prep</h3>
-                <p>Practice with AI-driven mock interviews tailored to your role. Receive feedback on body language, tone, and answers.</p>
-            </article>
-            <article class="feature-card">
+            </div>
+            <div class="feature-content">
+                <h3>Resume Optimizer</h3>
+                <p>Our AI analyzes your resume and provides actionable tips to make it stand out. Get past the ATS and impress hiring managers.</p>
+            </div>
+        </article>
+
+        <!-- Feature Card 3:  -->
+        <article class="feature-card">
+            <div class="icon-container">
                 <picture>
-                    <source srcset="assets/icons/skill-assessment.svg" type="image/svg+xml">
-                    <img src="assets/icons/skill-assessment.png" alt="Skill Assessment icon" class="feature-icon" loading="lazy">
+                    <source srcset="assets/icons/resume-optimizer.svg" type="image/svg+xml">
+                    <img src="assets/icons/resume-optimizer.png" alt="Resume Optimizer icon" class="feature-icon" loading="lazy">
                 </picture>
-                <h3>Skill Assessment</h3>
-                <p>Identify the skills employers are looking for in your industry and level up with personalized recommendations.</p>
-            </article>
-            <article class="feature-card">
+            </div>
+            <div class="feature-content">
+                <h3>Resume Optimizer</h3>
+                <p>Our AI analyzes your resume and provides actionable tips to make it stand out. Get past the ATS and impress hiring managers.</p>
+            </div>
+        </article>
+
+        <!-- Feature Card 4:  -->
+        <article class="feature-card">
+            <div class="icon-container">
                 <picture>
-                    <source srcset="assets/icons/matching-job-board.svg" type="image/svg+xml">
-                    <img src="assets/icons/matching-job-board.png" alt="Matching Job Board icon" class="feature-icon" loading="lazy">
+                    <source srcset="assets/icons/resume-optimizer.svg" type="image/svg+xml">
+                    <img src="assets/icons/resume-optimizer.png" alt="Resume Optimizer icon" class="feature-icon" loading="lazy">
                 </picture>
-                <h3>Matching Job Board</h3>
-                <p>Stop scrolling endlessly. Discover job listings perfectly matched to your profile and preferences.</p>
-            </article>
-            <article class="feature-card">
+            </div>
+            <div class="feature-content">
+                <h3>Resume Optimizer</h3>
+                <p>Our AI analyzes your resume and provides actionable tips to make it stand out. Get past the ATS and impress hiring managers.</p>
+            </div>
+        </article>
+
+        <!-- Feature Card 5: -->
+        <article class="feature-card">
+            <div class="icon-container">
                 <picture>
-                    <source srcset="assets/icons/easy-application.svg" type="image/svg+xml">
-                    <img src="assets/icons/easy-application.png" alt="Easy Application Process icon" class="feature-icon" loading="lazy">
+                    <source srcset="assets/icons/resume-optimizer.svg" type="image/svg+xml">
+                    <img src="assets/icons/resume-optimizer.png" alt="Resume Optimizer icon" class="feature-icon" loading="lazy">
                 </picture>
-                <h3>Easy Application Process</h3>
-                <p>Apply with one-click and track your application progress-all from a single dashboard.</p>
-            </article>
-            <article class="feature-card">
+            </div>
+            <div class="feature-content">
+                <h3>Resume Optimizer</h3>
+                <p>Our AI analyzes your resume and provides actionable tips to make it stand out. Get past the ATS and impress hiring managers.</p>
+            </div>
+        </article>
+
+        <!-- Feature Card 6: -->
+        <article class="feature-card">
+            <div class="icon-container">
                 <picture>
-                    <source srcset="assets/icons/skill-assessment.svg" type="image/svg+xml">
-                    <img src="assets/icons/skill-assessment.png" alt="Skill Assessment icon" class="feature-icon" loading="lazy">
+                    <source srcset="assets/icons/resume-optimizer.svg" type="image/svg+xml">
+                    <img src="assets/icons/resume-optimizer.png" alt="Resume Optimizer icon" class="feature-icon" loading="lazy">
                 </picture>
-                <h3>Skill Assessment</h3>
-                <p>Identify the skills employers are looking for in your industry and level up with personalized recommendations.</p>
-            </article>
-        </div>
-    </section>
+            </div>
+            <div class="feature-content">
+                <h3>Resume Optimizer</h3>
+                <p>Our AI analyzes your resume and provides actionable tips to make it stand out. Get past the ATS and impress hiring managers.</p>
+            </div>
+        </article>
+    </div>
+</section>
 
     <!-- How It Works Section -->
     <section class="how-it-works" id="how-it-works">
