@@ -4,22 +4,29 @@ document.querySelector('.hamburger').addEventListener('click', () => {
     nav.classList.toggle('active');
 });
 
-// FAQ Accordion with Accessibility Enhancements
-document.querySelectorAll('.faq-question').forEach(button => {
-    button.addEventListener('click', () => {
-        const answer = button.nextElementSibling;
-        const isOpen = button.getAttribute('aria-expanded') === 'true';
+// FAQ Section Functionality
+document.addEventListener('DOMContentLoaded', () => {
+    const faqQuestions = document.querySelectorAll('.faq-question');
+    
+    faqQuestions.forEach(question => {
+        question.addEventListener('click', () => {
+            const isExpanded = question.getAttribute('aria-expanded') === 'true';
+            question.setAttribute('aria-expanded', !isExpanded);
+            
+            // Close other open questions
+            faqQuestions.forEach(otherQuestion => {
+                if (otherQuestion !== question) {
+                    otherQuestion.setAttribute('aria-expanded', 'false');
+                }
+            });
+        });
         
-        button.setAttribute('aria-expanded', !isOpen);
-        answer.style.display = isOpen ? 'none' : 'block';
-        button.querySelector('.toggle').textContent = isOpen ? '+' : '−';
-    });
-
-    // Keyboard Accessibility for FAQ Accordion
-    button.addEventListener('keydown', (e) => {
-        if (e.key === 'Enter' || e.key === ' ') {
-            e.preventDefault();
-            button.click();
-        }
+        // Add keyboard support
+        question.addEventListener('keydown', (event) => {
+            if (event.key === 'Enter' || event.key === ' ') {
+                event.preventDefault();
+                question.click();
+            }
+        });
     });
 });
