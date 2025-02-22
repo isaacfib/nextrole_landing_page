@@ -68,6 +68,16 @@ body {
 .dot-yellow { background: #FBBC05; box-shadow: 0px 0px 9px #FBBC05; }
 .dot-blue { background: #38BDE9; box-shadow: 0px 0px 9px #38BDE9; }
 
+/* Specific Dot Positions */
+.dot-hero-1 { left: 420px; top: 442px; }
+.dot-hero-2 { left: 882px; top: 237px; }
+.dot-hero-3 { left: 442px; top: 687px; }
+.dot-hero-4 { left: 162px; top: 397px; }
+.dot-hero-5 { left: 336px; top: 225px; }
+.dot-hero-6 { left: 1175px; top: 435px; }
+.dot-hero-7 { left: 1051px; top: 602px; }
+.dot-hero-8 { left: 1241px; top: 210px; }
+
 /* Header */
 .header-container {
     display: flex;
