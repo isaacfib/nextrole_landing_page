@@ -1,11 +1,24 @@
-// Hamburger Menu Toggle
-document.querySelector('.hamburger').addEventListener('click', () => {
-    const nav = document.querySelector('.navigation');
-    nav.classList.toggle('active');
-});
-
-// FAQ Section Functionality
 document.addEventListener('DOMContentLoaded', () => {
+    // Hamburger Menu Toggle
+    const hamburger = document.querySelector('.hamburger');
+    const nav = document.querySelector('.navigation');
+    
+    hamburger.addEventListener('click', () => {
+        const isExpanded = nav.classList.toggle('active');
+        hamburger.setAttribute('aria-expanded', isExpanded);
+        hamburger.textContent = isExpanded ? '✕' : '☰';
+    });
+    
+    // Close menu when a link is clicked
+    document.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+            nav.classList.remove('active');
+            hamburger.setAttribute('aria-expanded', 'false');
+            hamburger.textContent = '☰';
+        });
+    });
+    
+    // FAQ Section Functionality
     const faqQuestions = document.querySelectorAll('.faq-question');
     
     faqQuestions.forEach(question => {
